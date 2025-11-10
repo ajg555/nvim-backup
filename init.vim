@@ -45,17 +45,14 @@ call plug#end()
 
 " Mostrar arquivos ocultos
 let NERDTreeShowHidden = 1
-" Fechar o NERDTree ao abrir um arquivo
+": Fechar o NERDTree ao abrir um arquivo
 " let NERDTreeQuitOnOpen = 1
 " Atualizar árvore automaticamente
-autocmd BufEnter * if exists("t:NERDTreeBufName") && bufname("%") !~ "NERD_tree" | NERDTreeFind | endif
+"autocmd BufEnter * if exists("t:NERDTreeBufName") && bufname("%") !~ "NERD_tree" | NERDTreeFind | endif
 " Atalho para abrir/fechar NERDTree
-nnoremap <C-n> :NERDTreeToggle<CR>
+ nnoremap <C-n> :NERDTreeToggle<CR>
 " Abre automaticamente o NERDTree ao iniciar o Neovim se nenhum arquivo for passado
-autocmd VimEnter * if argc() == 0 | NERDTree | endif
-" Mudar o foco automaticamente para o arquivo aberto no NERDTree
-let g:NERDTreeQuitOnOpen = 0
-autocmd BufEnter * if &filetype == 'nerdtree' | wincmd p | endif
+ autocmd VimEnter * if argc() == 0 | NERDTree | endif
 " Reabrir automaticamente o NERDTree em novas abas
 " autocmd TabNewEntered * NERDTree
 
