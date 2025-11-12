@@ -35,7 +35,8 @@ Plug 'ryanoasis/vim-devicons'         " Ícones bonitos no NERDTree
 Plug 'vim-airline/vim-airline'        " Barra de status leve
 Plug 'vim-airline/vim-airline-themes' " Temas para o airline
 Plug 'tpope/vim-sensible'             " Boas configurações padrão
-Plug 'tpope/vim-commentary'           " Comentarios de linhas
+Plug 'tpope/vim-commentary'           " Comentarios de linhas\
+Plug 'tpope/vim-surround'             " PLug para completar remocer caracteres/tags de 'trechos' cercados
 
 call plug#end()
 
