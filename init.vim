@@ -35,8 +35,8 @@ Plug 'ryanoasis/vim-devicons'         " Ícones bonitos no NERDTree
 Plug 'vim-airline/vim-airline'        " Barra de status leve
 Plug 'vim-airline/vim-airline-themes' " Temas para o airline
 Plug 'tpope/vim-sensible'             " Boas configurações padrão
-Plug 'tpope/vim-commentary'           " Comentarios de linhas\
-Plug 'tpope/vim-surround'             " PLug para completar remocer caracteres/tags de 'trechos' cercados
+Plug 'tpope/vim-commentary'           " Comentarios de linhas
+Plug 'tpope/vim-surround'             " Plugin surround para autocompletar termos (aspas, tags, chaves, ...)
 
 call plug#end()
 
@@ -74,4 +74,12 @@ set smartcase
 " Permitir dividir janelas mais intuitivamente
 set splitbelow
 set splitright
+" Quebra linhas
+set wrap
+" Não quebra a linha no meio de palavras
+set linebreak
+" Mantem identacao de linhas extensas
+set breakindent
+" Deslocamento visual de linhas quebradas
+set breakindentopt=shift:2,min:20
 
